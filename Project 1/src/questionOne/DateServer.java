@@ -9,6 +9,7 @@ class DateServer
             ServerSocket sock = new ServerSocket(6017);
             System.out.println("Server Started");
             while (true) {
+                //accept() method stalls while waiting for a client to connect
                 Socket client = sock.accept();
 
                 PrintWriter pout = new

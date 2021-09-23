@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1d11c3f-8066-4d3a-bfa0-52880c9f7a46" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project 1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/.idea/Project 1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Project 1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Q1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Q2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/questionOne/DataServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/questionOne/DateServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +32,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TODO_SCOPE" value="All Places" />
   </component>
-  <component name="RunManager" selected="Application.DateClient">
+  <component name="RunManager" selected="Application.DateServer">
     <configuration name="DateClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="questionOne.DateClient" />
       <module name="Project 1" />
@@ -55,7 +46,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DateServer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="DateServer" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="questionOne.DateServer" />
       <module name="Project 1" />
       <extension name="coverage">
@@ -69,13 +60,13 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.DateServer (1)" />
+      <item itemvalue="Application.DateServer" />
       <item itemvalue="Application.DateClient" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.DateClient" />
-        <item itemvalue="Application.DateServer (1)" />
+        <item itemvalue="Application.DateServer" />
       </list>
     </recent_temporary>
   </component>
@@ -100,36 +91,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/questionOne/DataServer.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/questionOne/DataServer.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/questionOne/DataServer.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/questionOne/DataServer.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/questionOne/DataServer.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
