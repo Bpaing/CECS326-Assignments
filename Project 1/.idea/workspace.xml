@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e1d11c3f-8066-4d3a-bfa0-52880c9f7a46" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/questionOne/DataServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/questionOne/DateServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project 1/questionOne/DateClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/questionOne/DateClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/questionOne/QuoteClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/questionOne/DateServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/questionOne/QuoteServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,9 +34,15 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TODO_SCOPE" value="All Places" />
   </component>
-  <component name="RunManager" selected="Application.DateServer">
-    <configuration name="DateClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="questionOne.DateClient" />
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Users\Brendan\Downloads\College\CECS 326\Assignments\Project 1\src\questionOne" />
+      <recent name="E:\Users\Brendan\Downloads\College\CECS 326\Assignments\Project 1\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.QuoteClient">
+    <configuration name="QuoteClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="questionOne.QuoteClient" />
       <module name="Project 1" />
       <extension name="coverage">
         <pattern>
@@ -46,8 +54,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DateServer" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="questionOne.DateServer" />
+    <configuration name="QuoteServer" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="questionOne.QuoteServer" />
       <module name="Project 1" />
       <extension name="coverage">
         <pattern>
@@ -60,13 +68,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.DateServer" />
-      <item itemvalue="Application.DateClient" />
+      <item itemvalue="Application.QuoteServer" />
+      <item itemvalue="Application.QuoteClient" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DateClient" />
-        <item itemvalue="Application.DateServer" />
+        <item itemvalue="Application.QuoteClient" />
       </list>
     </recent_temporary>
   </component>
@@ -91,5 +98,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
