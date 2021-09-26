@@ -1,4 +1,5 @@
 package questionOne;
+
 import java.net.*;
 import java.io.*;
 
@@ -8,11 +9,8 @@ class QuoteClient
     public static void main(String[] args) throws IOException{
         try {
             Socket client = new Socket("localhost", 6017);
-            while (true)
-            {
-
-
-            }
+            BufferedReader in = new BufferedReader(new InputStreamReader(client.getInputStream()));
+            System.out.println(in.readLine());
         }
         catch (IOException ioe) {
             System.err.println(ioe);

@@ -3,11 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="e1d11c3f-8066-4d3a-bfa0-52880c9f7a46" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project 1/questionOne/QuoteClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project 1/questionOne/QuoteServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project 1/questionOne/quotes.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project 1/questionTwo/EchoServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/questionTwo/EchoServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/questionTwo/EchoServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project 1/questionOne/QuoteClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project 1/questionOne/QuoteClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project 1/questionOne/QuoteServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project 1/questionOne/QuoteServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project 1/questionOne/quotes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/quotes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/questionOne/QuoteClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/questionOne/QuoteClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/questionOne/QuoteServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/questionOne/QuoteServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/questionOne/quotes.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,17 +36,19 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TODO_SCOPE" value="All Places" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Users\Brendan\Downloads\College\CECS 326\Assignments\Project 1" />
       <recent name="E:\Users\Brendan\Downloads\College\CECS 326\Assignments\Project 1\src\questionOne" />
       <recent name="E:\Users\Brendan\Downloads\College\CECS 326\Assignments\Project 1\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EchoClient">
+  <component name="RunManager" selected="Compound.QuestionOne">
     <configuration name="EchoClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="questionTwo.EchoClient" />
       <module name="Project 1" />
@@ -72,7 +75,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuoteClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="QuoteClient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="questionOne.QuoteClient" />
       <module name="Project 1" />
       <extension name="coverage">
@@ -98,17 +101,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="QuestionOne" type="CompoundRunConfigurationType">
+      <toRun name="QuoteClient" type="Application" />
+      <toRun name="QuoteServer" type="Application" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="CompoundRunConfigurationType">
+      <toRun name="QuoteClient" type="Application" />
+      <toRun name="QuoteServer" type="Application" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.QuoteServer" />
       <item itemvalue="Application.QuoteClient" />
       <item itemvalue="Application.EchoServer" />
       <item itemvalue="Application.EchoClient" />
+      <item itemvalue="Compound.QuestionOne" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.EchoClient" />
         <item itemvalue="Application.EchoServer" />
-        <item itemvalue="Application.QuoteClient" />
       </list>
     </recent_temporary>
   </component>
