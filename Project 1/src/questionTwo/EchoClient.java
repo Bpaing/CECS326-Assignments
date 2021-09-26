@@ -15,8 +15,9 @@ public class EchoClient {
 			String userInput;
 			while((userInput = stdIn.readLine()) != null) {
 				pout.println(userInput);				
-				System.out.println("Server:" + in.readLine());			
+				System.out.println((in.readLine()).replaceAll("(?i)Client", "Server"));			
 			}
+			
 			server.close();
 		}
 		catch(UnknownHostException e){
