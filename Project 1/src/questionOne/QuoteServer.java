@@ -9,7 +9,14 @@ class QuoteServer
     public static void main(String[] args) throws IOException {
         try {
             File file = new File(System.getProperty("user.dir") + "\\quotes.txt");
-            BufferedReader in = new BufferedReader(new FileReader(file));
+            BufferedReader fileRead = new BufferedReader(new FileReader(file));
+            List<String> quotes = new ArrayList<>();
+            String str = fileRead.readLine();
+            while (str != null){
+                quotes.add(str);
+                str = fileRead.readLine();
+            }
+            fileRead.close();
 
             ServerSocket sock = new ServerSocket(6017);
             System.out.println("Server started.");
@@ -21,10 +28,9 @@ class QuoteServer
                 PrintWriter pout = new
                         PrintWriter(client.getOutputStream(), true);
 
-                pout.println(in.readLine());
+                pout.println(quotes.get((int)(Math.random()*quotes.size())));
 
                 client.close();
-                in.close();
             }
 
         }
@@ -32,5 +38,4 @@ class QuoteServer
             System.err.println(ioe);
         }
     }
-
 }

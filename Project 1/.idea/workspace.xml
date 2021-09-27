@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e1d11c3f-8066-4d3a-bfa0-52880c9f7a46" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quotes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/quotes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project 1/questionOne/QuoteServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project 1/questionOne/QuoteServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project 1/questionTwo/EchoClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project 1/questionTwo/EchoClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project 1/questionTwo/EchoServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project 1/questionTwo/EchoServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/questionOne/QuoteServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/questionOne/QuoteServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +46,7 @@
       <recent name="E:\Users\Brendan\Downloads\College\CECS 326\Assignments\Project 1\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Compound.QuestionTwo">
+  <component name="RunManager" selected="Compound.QuestionOne">
     <configuration name="EchoClient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="questionTwo.EchoClient" />
       <module name="Project 1" />
