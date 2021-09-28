@@ -21,7 +21,7 @@ Open command line and set the current directory to the folder where the .java fi
 
 Use the following template to run a java file:
 
-    java [packageName].[file]
+    java [packageName].[fileName] (without .java)
 
     Example:    java questionOne.QuoteServer
 
