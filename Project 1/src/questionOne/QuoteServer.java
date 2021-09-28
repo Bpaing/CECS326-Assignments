@@ -30,6 +30,7 @@ class QuoteServer
 
                 pout.println(quotes.get((int)(Math.random()*quotes.size())));
 
+                System.out.println("Closing current connection. . .");
                 client.close();
             }
 
