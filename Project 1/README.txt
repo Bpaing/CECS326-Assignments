@@ -1,3 +1,5 @@
+This README is for running the programs in a Windows command line terminal.
+
 To compile:
 Place the included files into a folder.
 Open command line and set the current directory to the folder where files are contained.
