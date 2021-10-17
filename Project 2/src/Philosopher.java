@@ -17,27 +17,20 @@ public class Philosopher implements Runnable
         rightFork = right;
     }
 
-    private void doSomething(String str) {
-        System.out.printf("%s is currently %s", Thread.currentThread().getName(), str);
-    }
-
     /*
             "Runnable interface is the primary template for any object that is intended to be executed by a thread.
             It defines a single method run(), which is meant to contain the code that is executed by the thread."
-
-            define threads in main?
      */
     @Override
     public void run() {
         while (true)
         {
             //think
-            doSomething("thinking");
-            //pick up either left or right
-
-            //eat (when both picked up)
-            doSomething("eating");
+            //pick up forks
+                //takeForks()
+            //eat
             //put down
+                //returnForks
         }
     }
 }
