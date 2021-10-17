@@ -10,6 +10,7 @@ public class DiningPhilosophers
 {
     public static void main(String args[])
     {
-        // Here your code
+        Philosopher[] phil = new Philosopher[5];
+        Object forks = new Object[5];
     }
 }
