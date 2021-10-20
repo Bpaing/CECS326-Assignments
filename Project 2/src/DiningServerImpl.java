@@ -22,9 +22,10 @@ import java.util.concurrent.locks.ReentrantLock;
 */
 public class DiningServerImpl implements DiningServer
 {
-    private Lock lock;
-    private Condition condition;
+    private final Lock lock;
+    private final Condition condition;
     private boolean[] forks;
+    private static DiningServerImpl oneOnly = null;
 
     public DiningServerImpl()
     {
@@ -35,6 +36,12 @@ public class DiningServerImpl implements DiningServer
             forks[i] = true;
     }
 
+    public static DiningServerImpl getInstance()
+    {
+        if (oneOnly == null)
+            oneOnly = new DiningServerImpl();
+        return oneOnly;
+    }
 
     @Override
     public void takeForks(int philNumber)
@@ -44,6 +51,7 @@ public class DiningServerImpl implements DiningServer
             //thread waits while forks are unavailable
             while (!forks[philNumber - 1] || !forks[philNumber % forks.length]) {
                 condition.await();
+		System.out.print( Thread.currentThread().getName() + " is awaiting...\n");
             }
             //forks are available for taking
             forks[philNumber - 1] = false;              //take left fork

@@ -13,7 +13,7 @@ public class Philosopher implements Runnable
 
     public Philosopher(Object left, Object right, int n)
     {
-        dining = new DiningServerImpl();
+        dining = dining.getInstance();
         num = n;
     }
 
@@ -25,6 +25,7 @@ public class Philosopher implements Runnable
         System.out.println(str);
         Thread.sleep((int) (Math.random() * 1500));
     }
+
     /*
             "Runnable interface is the primary template for any object that is intended to be executed by a thread.
             It defines a single method run(), which is meant to contain the code that is executed by the thread."
@@ -46,6 +47,9 @@ public class Philosopher implements Runnable
 
                 //put down
                 dining.returnForks(num);
+
+		//think
+                thinkEat(Thread.currentThread().getName() + " is thinking again");
 
             } catch (InterruptedException e) {
                 e.printStackTrace();
