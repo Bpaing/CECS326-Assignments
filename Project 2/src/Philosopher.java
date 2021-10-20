@@ -8,29 +8,49 @@
 
 public class Philosopher implements Runnable
 {
-    private Object leftFork;
-    private Object rightFork;
+    private DiningServerImpl dining;
+    private int num;
 
-    public Philosopher(Object left, Object right)
+    public Philosopher(Object left, Object right, int n)
     {
-        leftFork = left;
-        rightFork = right;
+        dining = new DiningServerImpl();
+        num = n;
     }
 
+
+    public int getNum() { return num; }
+
+    public void thinkEat(String str) throws InterruptedException
+    {
+        System.out.println(str);
+        Thread.sleep((int) (Math.random() * 1500));
+    }
     /*
             "Runnable interface is the primary template for any object that is intended to be executed by a thread.
             It defines a single method run(), which is meant to contain the code that is executed by the thread."
      */
     @Override
     public void run() {
-        while (true)
+        int roundsLeft = 1;
+        while (roundsLeft > 0)
         {
-            //think
-            //pick up forks
-                //takeForks()
-            //eat
-            //put down
-                //returnForks
+            try {
+                //think
+                thinkEat(Thread.currentThread().getName() + " is thinking");
+
+                //pick up forks
+                dining.takeForks(num);
+
+                //eat
+                thinkEat(Thread.currentThread().getName() + " is eating");
+
+                //put down
+                dining.returnForks(num);
+
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            roundsLeft--;
         }
     }
 }

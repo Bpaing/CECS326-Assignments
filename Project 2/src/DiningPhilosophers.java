@@ -18,12 +18,12 @@ public class DiningPhilosophers
 
         for (int i = 0; i < phil.length; i++) {
             Object left = forks[i];
-            Object right = forks[(i+1 % forks.length)];
+            Object right = forks[(i+1) % forks.length];
             //modulus length so that the last philosopher can use the first fork
 
-            phil[i] = new Philosopher(left, right);
+            phil[i] = new Philosopher(left, right, i+1);
 
-            Thread thread = new Thread(phil[i], "Philosopher #" + (i+1));
+            Thread thread = new Thread(phil[i], "Philosopher #" + phil[i].getNum());
             thread.start();
             // now every philosopher is executing run() method
         }
