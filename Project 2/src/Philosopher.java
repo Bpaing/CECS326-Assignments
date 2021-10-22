@@ -11,7 +11,7 @@ public class Philosopher implements Runnable
     private DiningServerImpl dining;
     private int num;
 
-    public Philosopher(Object left, Object right, int n)
+    public Philosopher(int n)
     {
         dining = dining.getInstance();
         num = n;
@@ -23,7 +23,7 @@ public class Philosopher implements Runnable
     public void thinkEat(String str) throws InterruptedException
     {
         System.out.println(str);
-        Thread.sleep((int) (Math.random() * 1500));
+        Thread.sleep((int) ((Math.random() * 2000) + 1000));
     }
 
     /*

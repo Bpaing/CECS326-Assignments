@@ -51,7 +51,7 @@ public class DiningServerImpl implements DiningServer
             //thread waits while forks are unavailable
             while (!forks[philNumber - 1] || !forks[philNumber % forks.length]) {
                 condition.await();
-		System.out.print( Thread.currentThread().getName() + " is awaiting...\n");
+		        System.out.print( Thread.currentThread().getName() + " is awaiting...\n");
             }
             //forks are available for taking
             forks[philNumber - 1] = false;              //take left fork
