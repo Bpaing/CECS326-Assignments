@@ -22,7 +22,7 @@ public class FCFS implements Algorithm
            Task next = pickNextTask();
            queue.remove(next);
            CPU.run(next, next.getBurst());
-           System.out.printf("%s, %d\n", next.getName(), next.getBurst());
+           System.out.printf("Task %s has finished.\n\n", next.getName());
        }
     }
 
