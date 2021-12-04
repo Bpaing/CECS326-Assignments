@@ -10,6 +10,7 @@ import java.util.*;
 public class RR implements Algorithm
 {
     private List<Task> queue;
+    int quantum = 10;
 
     public RR(List<Task> queue) {this.queue = queue;}
 
@@ -21,7 +22,8 @@ public class RR implements Algorithm
             Task next = pickNextTask();
             queue.remove(next);
             CPU.run(next, next.getBurst());
-            System.out.printf("Task %s has finished.\n\n", next.getName());
+            if(next.getBurst() == 0)
+                System.out.printf("Task %s has finished.\n\n", next.getName());
         }
     }
 
@@ -29,23 +31,10 @@ public class RR implements Algorithm
     @Override
     public Task pickNextTask()
     {
-        //INCOMPLETE SYNTAX TO MAKING A READY QUEUE
-        /*
-        int quantum = 10;
-        List<Task> readyQueue = null;
-        for (int i = 0; i < queue.size(); i++){
-            //theres no arrival times
-
-            readyQueue.add(queue.get(i));
-        }
-        Task temp =
-        //return readyQueue.get(0);
-         */
-
-        int quantum = 10;
-        queue.get(0).setBurst(queue.get(0).getBurst()-quantum);
-        //Unsure what else to do with Priority. Treat like Arrival Time??
-        //queue.get(0).setPriority(queue.get(0).getPriority()-quantum);
+        if(queue.get(0).getBurst() <= quantum)
+            queue.get(0).setBurst(0);
+        else
+            queue.get(0).setBurst(queue.get(0).getBurst()-quantum);
         if(queue.get(0).getBurst() > 0){
             //if the task isn't done by the quantum time limit, it gets added to the back
             queue.add(queue.get(0));
