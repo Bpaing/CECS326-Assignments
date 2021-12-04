@@ -18,12 +18,21 @@ public class RR implements Algorithm
     public void schedule()
     {
         System.out.println("Scheduling order of RR:");
+        System.out.println("quantum = " + quantum);
         while (queue.size() != 0) {
             Task next = pickNextTask();
             queue.remove(next);
-            CPU.run(next, next.getBurst());
-            if(next.getBurst() == 0)
+            if (next.getBurst() > quantum) {
+                CPU.run(next, quantum);
+                next.setBurst(next.getBurst() - quantum);
+                System.out.printf("%s ran for: %d\nRemaining Burst: %d\n\n", next.getName(), quantum, next.getBurst());
+                queue.add(next);
+            } else {
+                CPU.run(next, next.getBurst());
+                next.setBurst(0);
+                System.out.printf("%s ran for: %d\nRemaining Burst: %d\n\n", next.getName(), quantum, next.getBurst());
                 System.out.printf("Task %s has finished.\n\n", next.getName());
+            }
         }
     }
 
@@ -31,14 +40,6 @@ public class RR implements Algorithm
     @Override
     public Task pickNextTask()
     {
-        if(queue.get(0).getBurst() <= quantum)
-            queue.get(0).setBurst(0);
-        else
-            queue.get(0).setBurst(queue.get(0).getBurst()-quantum);
-        if(queue.get(0).getBurst() > 0){
-            //if the task isn't done by the quantum time limit, it gets added to the back
-            queue.add(queue.get(0));
-        }
         return queue.get(0);
     }
 }
